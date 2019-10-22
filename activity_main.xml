@@ -1,36 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              
-        >
-    <ListView android:id="@+id/list"
-              android:layout_width="fill_parent"
-              android:layout_height="0dip"
-              android:layout_weight="1"
-              android:transcriptMode="alwaysScroll"
-              android:cacheColorHint="#00000000"
-              android:listSelector="@android:color/transparent"/>
- 
- 
-    <LinearLayout android:id="@+id/footer"
-                  android:layout_width="fill_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="horizontal"
-                  android:gravity="bottom">
- 
-        <EditText android:inputType="textMultiLine|textNoSuggestions"
-                  android:layout_width="0dp"
-                  android:layout_height="40dp"
-                  android:id="@+id/editText"
-                  android:layout_weight="1"/>
- 
- 
-        <Button android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/send_button"
-                android:layout_gravity="center_vertical"
-                android:text="send" />
-    </LinearLayout>
-</LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="384dp"
+        android:layout_marginRight="384dp"
+        android:text="halo" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="504dp"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="174dp"
+        android:layout_marginLeft="174dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginRight="149dp"
+        android:layout_marginBottom="383dp"
+        android:text="Stop" />
+
+</RelativeLayout>
